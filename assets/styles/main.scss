@@ -1,0 +1,269 @@
+@charset "UTF-8";
+
+// Automatically injected Bower dependencies via wiredep (never manually edit this block)
+// bower:scss
+@import "../../bower_components/components-font-awesome/scss/font-awesome.scss";
+// endbower
+
+// Materialize Mixins
+// @import "components/prefixer";
+@import "../../bower_components/materialize/sass/components/mixins";
+@import "../../bower_components/materialize/sass/components/color";
+
+
+
+// Default materialize Variables;
+@import "../../bower_components/materialize/sass/components/variables";
+
+// Custom Variables
+@import "common/variables";
+
+// Load all Materialize Components
+@import "../../bower_components/materialize/sass/materialize.scss";
+
+@import "common/global";
+@import "components/buttons";
+@import "components/comments";
+@import "components/forms";
+@import "components/grid";
+@import "components/wp-classes";
+@import "layouts/header";
+@import "layouts/sidebar";
+@import "layouts/footer";
+@import "layouts/pages";
+@import "layouts/posts";
+@import "layouts/tinymce";
+
+body {
+	font-family: 'Roboto', sans-serif;
+	width: 100%;
+}
+
+nav .brand-logo{
+	font-size: 33pt;
+	font-weight: bold;
+}
+
+#logo{
+	float: left;
+	width: 120px;
+	height: 120px;
+	background-color: #FFF;
+	border-radius: 50%;
+    margin-top: 8px;
+    margin-left: 23px;
+}
+
+// SECTION ONE - MAIN  SECTION
+
+.cadetblue{
+	background-color: #4bb1b6;
+}
+
+.main-section{
+	height: 517px;	
+}
+
+
+.main-title{
+	font-size: 60px;
+	color: #FFF;
+	font-weight: bold;
+	margin-top: 50px;
+}
+
+.main-sub-text{
+	font-weight: lighter;
+	color: #FFF;
+	font-size: 36px;
+}
+
+
+
+
+
+// SECOND SECTION - SMALL SECTION
+
+.light-gray{
+	background-color: #d0d0d0;
+}
+
+.small-section{
+	height: 418px;
+
+}
+.small-title{
+	font-size: 18px;
+	font-weight: 300;
+	color: #000;
+	margin-top: 100px;
+}
+
+.small-sub-text{
+	font-weight: lighter;
+	color: #000;
+	font-size: 36px;
+}
+
+// SECTION THREE - CATEGORY
+
+.cat-container{
+	width: 75%;
+	margin-top: 65px;
+}
+.catIcon {
+	border-radius: 50%;
+	width: 75px;
+	height: 75px;
+	padding-top: 11px;
+	margin: 0px auto;
+}
+
+.catHeader{
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.catDescription{
+	font-size: 16px;
+	font-weight: 300;
+	width: 85%;
+	margin: 0px auto;
+}
+
+// BANNERS
+#full-screen-banner {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    min-height: 400px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#full-screen-banner-two {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    min-height: 360px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.banner-one{
+	background-image: url(../images/banner1.jpg);
+	width: 400px;
+}
+
+.banner-two{
+	background-image: url(../images/banner2.jpg);
+}
+
+// SECTION FOUR - LIST 
+
+// ==================FIGURE OUT MOBILE RESPONSIVENESS=========================
+.list-container{
+	margin-top: 25px;
+	width: 80%;
+	margin: 0px auto;
+}
+
+.list-image{
+	border-radius: 50%;
+	height: 75px;
+	width: 75px;
+	background-color: #4bb1b7;
+	margin: 0px auto;
+	display: inline-block;
+}
+
+.list-title{
+	display: inline-block;
+	margin: 0px auto;
+	vertical-align: top;
+	margin-top: 27px;
+	padding-left: 10px;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.list-location{
+	margin: 0px auto;
+	vertical-align: top;
+	margin-top: 27px;
+	font-size: 18px;
+}
+
+.list-status{
+	margin: 0px auto;
+	vertical-align: top;
+	margin-top: 27px;
+	font-size: 18px;
+}
+
+.list-container ul {
+    list-style-type: none;	
+    overflow: hidden;
+}
+
+.list-container li {
+    float: left;
+
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+// FIFTH SECTION - LIGHT GREY
+.small-sub-text-padding{
+	font-weight: lighter;
+	color: #000;
+	font-size: 36px;
+	padding: 60px;
+
+}
+
+// SECTION SIX - FOOTER
+.darkslategray{
+	background-color: #2b2b2b;
+}
+
+.footer-text{
+	font-size: 17px;
+	color: #FFF;
+	padding-top: 72px;
+	width: 80%;
+	margin: 0px auto;
+
+}
+
+.footer-pc{
+	width: 400px;
+	height: 300px;
+	background-image: url(../images/computer.png);
+	margin: 0px auto;
+
+
+}
+// UNDERLINE
+.hr-grey{
+    border-top: 2px solid #c6c8c8;
+    width: 972px;
+    margin-bottom: 15px;
+}
+hr{
+    border-top: 2px solid #4bb1b6;
+    width: 86px;
+}
+
+//FOOTER
+footer{
+	display: none
+}
